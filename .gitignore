@@ -1,52 +1,77 @@
-# Prerequisites
-*.d
+# .NET/Microsoft Build Artifacts
+bin/
+obj/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# .NET User Secrets
+secrets.json
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Rider
+.idea/
+*.sln.iml
+.idea_modules/
+.idea/workspace.xml
+.idea/dictionaries
+.idea/shelf/
+.idea/httpRequests/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Visual Studio
+.vscode/
+.vs/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+*.user
+*.suo
+*.csproj.user
+*.sln.docstates
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Visual Studio Code
+.vscode/
+.vscode/launch.json
+.vscode/settings.json
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# macOS specific
+.DS_Store
 
-# Executables
-*.exe
-*.out
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# Build output for iOS
+# Ignoring because these are specific to iOS build artifacts
+*.ipa
 *.app
-*.i*86
-*.x86_64
-*.hex
+*.dSYM
+# User specific iOS build settings
+xcuserdata/
+DerivedData/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Build output for Android
+*.apk
+*.aab
+*.ap_
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Local build files
+.localhistory/
+
+# Log files
+*.log
+
+# Xamarin/Maui specific
+*.db
+*.db-shm
+*.db-wal
+*.lock.json
+
+# .NET specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# App Secrets
+appsettings.Local.json
+appsettings.*.json
+appsettings.Development.json
+appsettings.Production.json
+
+.fake
